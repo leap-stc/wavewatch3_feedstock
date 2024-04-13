@@ -107,7 +107,7 @@ WW3 = (
     | StoreToZarr(
         store_name="wavewatch3.zarr",
         combine_dims=pattern.combine_dim_keys,
-        target_chunks={"time": 200},
+        target_chunks={"time": 100},
     )
     | ConsolidateDimensionCoordinates()
     | ConsolidateMetadata()
