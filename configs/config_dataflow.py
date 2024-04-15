@@ -2,6 +2,7 @@ FEEDSTOCK_NAME = "ww3_feedstock"  # Can we get this at runtime?
 c.Bake.prune = 0
 c.Bake.bakery_class = "pangeo_forge_runner.bakery.dataflow.DataflowBakery"
 c.DataflowBakery.machine_type = "n2-highmem-16"
+c.DataflowBakery.max_num_workers = 5
 c.DataflowBakery.use_dataflow_prime = False
 c.DataflowBakery.use_public_ips = True
 c.DataflowBakery.service_account_email = (
