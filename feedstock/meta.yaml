@@ -1,16 +1,13 @@
-title: "LEAP Data Library Prototype"
-description: >
-  A prototype test for the LEAP Data Library refactor
+title: "Wave Watch 3"
+description: "20 year global ocean surface wave hindcast provided by Ifremer (French Research Institute for Exploitation of the Sea)"
 recipes:
-  - id: "small"
-    object: "recipe:small"
-  - id: "large"
-    object: "recipe:large"
+  - id: "wavewatch3"
+    object: "recipe:WW3"
 provenance:
   providers:
-    - name: "Julius"
-      description: "Just a guy testing some recipes. Nothing to see here."
+    - name: "Ifremer"
+      description: "Ifremer"
       roles:
-        - producer
-        - licensor
-  license: "CC-BY-4.0"
+        - host
+      url: https://www.ifremer.fr/en
+  license: "TBW"
