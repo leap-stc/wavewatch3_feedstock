@@ -92,8 +92,8 @@ class StripCoords(beam.PTransform):
         print(f"Preprocessing before {ds =}")
         ds = ds.reset_coords(drop=True)
         ds = ds.set_coords("MAPSTA")
-        print("Testing: Drop variables")
-        ds = ds.drop([v for v in ds.data_vars if v not in ['vcur']])
+        # print("Testing: Drop variables")
+        # ds = ds.drop([v for v in ds.data_vars if v not in ['vcur']])
         print(f"Preprocessing after {ds =}")
         return index, ds
 
