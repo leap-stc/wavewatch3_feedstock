@@ -101,7 +101,7 @@ class StripCoords(beam.PTransform):
 
 WW3 = (
     beam.Create(pattern.items())
-    | OpenURLWithFSSpec()
+    | OpenURLWithFSSpec(max_concurrency=5) #Might need to lower this even furtherto get this to not fail during caching.
     | OpenWithXarray()
     | StripCoords()
     | StoreToZarr(
